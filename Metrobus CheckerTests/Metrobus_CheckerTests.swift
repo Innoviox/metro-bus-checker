@@ -2,7 +2,7 @@
 //  Metrobus_CheckerTests.swift
 //  Metrobus CheckerTests
 //
-//  Created by Sarah Leavitt on 12/8/17.
+//  Created by Simon Chervenak on 12/8/17.
 //  Copyright © 2017 Innoviox. All rights reserved.
 //
 

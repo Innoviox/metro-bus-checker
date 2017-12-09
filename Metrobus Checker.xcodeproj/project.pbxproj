@@ -15,6 +15,7 @@
 		F9D617241FDB58070037066C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D617221FDB58070037066C /* LaunchScreen.storyboard */; };
 		F9D6172F1FDB58070037066C /* Metrobus_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6172E1FDB58070037066C /* Metrobus_CheckerTests.swift */; };
 		F9D6173A1FDB58070037066C /* Metrobus_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D617391FDB58070037066C /* Metrobus_CheckerUITests.swift */; };
+		F9D617491FDB583C0037066C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D617481FDB583C0037066C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F9D617351FDB58070037066C /* Metrobus CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metrobus CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D617391FDB58070037066C /* Metrobus_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrobus_CheckerUITests.swift; sourceTree = "<group>"; };
 		F9D6173B1FDB58070037066C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D617481FDB583C0037066C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D617491FDB583C0037066C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				F9D6172D1FDB58070037066C /* Metrobus CheckerTests */,
 				F9D617381FDB58070037066C /* Metrobus CheckerUITests */,
 				F9D617151FDB58070037066C /* Products */,
+				F9D617471FDB583C0037066C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				F9D6173B1FDB58070037066C /* Info.plist */,
 			);
 			path = "Metrobus CheckerUITests";
+			sourceTree = "<group>";
+		};
+		F9D617471FDB583C0037066C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D617481FDB583C0037066C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +209,11 @@
 					F9D617131FDB58070037066C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F9D617291FDB58070037066C = {
 						CreatedOnToolsVersion = 9.1;

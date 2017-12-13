@@ -21,9 +21,23 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-Hn-GSN">
+                                <rect key="frame" x="16" y="28" width="343" height="183"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bR2-Hn-GSN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="DlS-pb-D7B"/>
+                            <constraint firstItem="0cA-Gm-TaM" firstAttribute="top" secondItem="bR2-Hn-GSN" secondAttribute="bottom" constant="407" id="HWz-pa-Svf"/>
+                            <constraint firstItem="bR2-Hn-GSN" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="aKU-ee-Rlc"/>
+                            <constraint firstItem="bR2-Hn-GSN" firstAttribute="top" secondItem="R4h-VK-Xhy" secondAttribute="bottom" constant="8" symbolic="YES" id="jPt-H7-nd5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="map" destination="bR2-Hn-GSN" id="EZt-Pk-wW7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
